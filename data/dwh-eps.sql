@@ -1,0 +1,12 @@
+DROP DATABASE IF EXISTS dwh_eps;
+CREATE DATABASE dwh_eps;
+USE dwh_eps;
+
+CREATE TABLE contacts (
+  ID int(11) NOT NULL AUTO_INCREMENT,
+  NAME varchar(50) NOT NULL,
+  LASTNAME varchar(50) NOT NULL,
+  EMAIL varchar(50) NOT NULL,
+  CELLPHONE varchar(20) NOT NULL,
+  PRIMARY KEY (ID)
+)
