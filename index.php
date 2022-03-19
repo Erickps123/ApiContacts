@@ -28,8 +28,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
         $param["lastname"] = $_POST["lastname"];
         $param["email"] = $_POST["email"];
         $param["cellphone"] = $_POST["cellphone"];
-        $conn -> addcontact($param);
-        Response("Done.");
+        Response($conn -> addcontact($param));
         
       break;
     case "DELETE":
